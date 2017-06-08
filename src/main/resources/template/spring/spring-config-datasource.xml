@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd"
+       default-autowire="byName">
+
+
+    <!-- 事务配置(写库) -->
+    <!--<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="writeDataSource"></property>
+    </bean>-->
+
+    <!-- API Dao 配置-->
+    <!--<bean id="apiWriteSqlMapClient" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+        <property name="configLocations">
+            <list>
+                <value>classpath*:sqlmap-api-config.xml</value>
+            </list>
+        </property>
+        <property name="dataSource" ref="writeDataSource"/>
+    </bean>
+    <bean id="apiReadSqlMapClient" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+        <property name="configLocations">
+            <list>
+                <value>classpath*:sqlmap-api-config.xml</value>
+            </list>
+        </property>
+        <property name="dataSource" ref="readDataSource"/>
+    </bean>
+
+    <bean id="dynamicIbatisConfig" class="com.lhb.plug.dynamicibatis.utils.Config">
+        <property name="transactionManager" ref="transactionManager"/>
+        <property name="readSqlMapClient" ref="apiReadSqlMapClient"/>
+        <property name="writeSqlMapClient" ref="apiWriteSqlMapClient"/>
+    </bean>-->
+</beans>
