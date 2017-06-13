@@ -70,10 +70,6 @@ public class ApiBaseDaoImpl<T extends BasePojo, Q extends BaseQuery> implements 
         return config.getReadSqlMapClient();
     }
 
-    protected String getUmpAppName() {
-        return config.getUmpAppName();
-    }
-
     private Class entityClass;  //实体类
 
     /**

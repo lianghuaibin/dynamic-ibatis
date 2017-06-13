@@ -17,8 +17,6 @@ import java.util.Map;
  */
 public class Config {
 
-    private String umpAppName;
-
     private PlatformTransactionManager transactionManager;
 
     private SqlMapClient writeSqlMapClient;
@@ -27,13 +25,6 @@ public class Config {
 
     public static Map<String,String> SQL_LOG = new HashMap<String,String>();
 
-    public String getUmpAppName() {
-        return umpAppName;
-    }
-
-    public void setUmpAppName(String umpAppName) {
-        this.umpAppName = umpAppName;
-    }
 
     public PlatformTransactionManager getTransactionManager() {
         return transactionManager;
